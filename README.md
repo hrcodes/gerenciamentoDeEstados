@@ -2,6 +2,9 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## SRC layout
+https://dribbble.com/shots/14761671-Finance-Dashboard-Dark-Concept
+
 ## Available Scripts
 
 In the project directory, you can run:
