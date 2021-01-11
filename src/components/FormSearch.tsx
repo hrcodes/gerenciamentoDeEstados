@@ -7,10 +7,12 @@ interface ParamsFormSearch{
  }
 
 function FormSearch(params: ParamsFormSearch) {
+   
    const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
       e.preventDefault(); // nao recarregou a pagina - comp padrao submit
       params.onSubmit(e.currentTarget); //$emit
    }
+   
    return ( 
       <form onSubmit={handleSubmit} onReset={params.onReset}>
          <input type="search" className={formClass.input} required />
