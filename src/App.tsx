@@ -1,14 +1,14 @@
 import React from 'react';
-import logo from './logo.svg';
+import FormSearch from './components/FormSearch';
 import './App.css';
-import Mensagem from './components/ExMensagem';
 
 function App() {
+  const send = (value: string) => { console.log('Helder', value) }
+  const clear = () => { console.log('reset') }
+
   return (
-    // porque nao funciona caso o className for da Mensagem?
-    <div className="App"> 
-      <Mensagem/>
-      <img src={logo} alt="Hello World" className="App-logo"/>
+    <div className="App">
+      <FormSearch onSubmit={ send } onReset={ clear }/>
     </div>
   );
 }
